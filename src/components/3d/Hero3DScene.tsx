@@ -87,6 +87,7 @@ function SimpleParticles() {
                     count={count}
                     array={positions}
                     itemSize={3}
+                    args={[positions, 3]}
                 />
             </bufferGeometry>
             <pointsMaterial size={0.03} color="#a78bfa" transparent opacity={0.6} />

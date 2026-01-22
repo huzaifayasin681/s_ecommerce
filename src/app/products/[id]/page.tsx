@@ -48,12 +48,14 @@ export default function ProductDetailPage() {
 
     const getCategoryEmoji = (category: string) => {
         switch (category) {
-            case 'tech':
-                return '⚡';
-            case 'accessories':
-                return '🎒';
-            case 'lifestyle':
-                return '✨';
+            case 'bridal':
+                return '👑';
+            case 'reception':
+                return '🥂';
+            case 'sangeet':
+                return '💃';
+            case 'mehendi':
+                return '🌿';
             default:
                 return '🛍️';
         }
@@ -128,9 +130,10 @@ export default function ProductDetailPage() {
                                     }}
                                     transition={{ duration: 6, repeat: Infinity }}
                                 >
-                                    {product.category === 'tech' && '🎧'}
-                                    {product.category === 'accessories' && '🎒'}
-                                    {product.category === 'lifestyle' && '✨'}
+                                    {product.category === 'bridal' && '👑'}
+                                    {product.category === 'reception' && '🥂'}
+                                    {product.category === 'sangeet' && '💃'}
+                                    {product.category === 'mehendi' && '🌿'}
                                 </motion.div>
 
                                 {/* Floating Particles */}
